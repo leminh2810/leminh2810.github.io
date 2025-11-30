@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Quang Minh | AI & Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="particles" id="particles"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>LQM<span class="logo-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">
+                    <span class="typing-text" id="greeting"></span>
+                    <span class="cursor">|</span>
+                </p>
+                <h1 class="hero-name glitch" data-text="Lê Quang Minh">Lê Quang Minh</h1>
+                <div class="hero-titles">
+                    <span class="title-tag">&lt;</span>
+                    <span class="rotating-title" id="rotatingTitle">AI Developer</span>
+                    <span class="title-tag">/&gt;</span>
+                </div>
+                <p class="hero-description">
+                    Building intelligent, user-focused applications that integrate 
+                    <span class="highlight">deep learning</span>, 
+                    <span class="highlight">computer vision</span>, and 
+                    <span class="highlight">multimodal systems</span> 
+                    with modern web technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">developer.py</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code id="codeAnimation"></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                        <img src="tacv.jpg" alt="Lê Quang Minh" class="profile-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-title">~/about-me</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">$</span> cat profile.txt</p>
+                            <p class="output">
+                                I am an AI and web developer with a strong foundation in deep learning, 
+                                computer vision, and multimodal systems. I'm passionate about creating 
+                                intelligent, user-focused applications that integrate advanced machine 
+                                learning models with modern web technologies.
+                            </p>
+                            <p><span class="prompt">$</span> cat education.json</p>
+                            <div class="output json-output">
+                                <p>{</p>
+                                <p>&nbsp;&nbsp;"university": "University of Science and Technology of Hanoi",</p>
+                                <p>&nbsp;&nbsp;"degree": "Bachelor of Information and Communication Technology",</p>
+                                <p>&nbsp;&nbsp;"period": "2022-2025",</p>
+                                <p>&nbsp;&nbsp;"gpa": 3.2,</p>
+                                <p>&nbsp;&nbsp;"certifications": ["Cyber Security", "Google Data Analytics"]</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Tech Stack
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">PyTorch</span>
+                        <span class="skill-tag" data-level="85">TensorFlow</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="95">Python</span>
+                        <span class="skill-tag" data-level="80">Java</span>
+                        <span class="skill-tag" data-level="75">C</span>
+                        <span class="skill-tag" data-level="85">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">OpenCV</span>
+                        <span class="skill-tag" data-level="85">MTCNN</span>
+                        <span class="skill-tag" data-level="88">NumPy</span>
+                        <span class="skill-tag" data-level="85">Pandas</span>
+                        <span class="skill-tag" data-level="80">Scikit-learn</span>
+                        <span class="skill-tag" data-level="75">Streamlit</span>
+                        <span class="skill-tag" data-level="80">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="80">HTML/CSS</span>
+                        <span class="skill-tag" data-level="75">Git</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linear Algebra</span>
+                        <span class="skill-tag">Probability & Statistics</span>
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">Signal Systems</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Skill Visualization -->
+            <div class="skill-visualization">
+                <canvas id="skillCanvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-bg-pattern"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-label">Featured Project</span>
+                            <div class="project-links">
+                                <a href="https://github.com/leminh2810/Mutimodal-Sentiment-Analysis-for-Emotion-and-Reaction" target="_blank" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Multimodal Sentiment Analysis</h3>
+                        <p class="project-description">
+                            An advanced AI system for emotion and reaction analysis using multimodal data. 
+                            Combines deep learning techniques with computer vision to analyze sentiment 
+                            from multiple input sources.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                            <span>Deep Learning</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="project-bg-pattern"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-label">Web Application</span>
+                            <div class="project-links">
+                                <a href="https://github.com/leminh2810/Newspaper" target="_blank" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Newspaper Platform</h3>
+                        <p class="project-description">
+                            A modern newspaper web application featuring content management, 
+                            user authentication, and responsive design for optimal reading experience.
+                        </p>
+                        <div class="project-tech">
+                            <span>Web Dev</span>
+                            <span>HTML/CSS</span>
+                            <span>Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern - Techcombank</h3>
+                            <span class="timeline-date">Mar 2025 - Sep 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Contributed to product ideation and protocol development for digital banking solutions</li>
+                            <li>Designed and built prototype web applications and AI-based models to enhance customer experience</li>
+                            <li>Collaborated effectively in cross-functional teams in a professional banking environment</li>
+                            <li>Developed strong communication, teamwork, and problem-solving skills</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>AI/ML</span>
+                            <span>Web Apps</span>
+                            <span>FinTech</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>English Instructor</h3>
+                            <span class="timeline-date">2022 - 2024</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Tutored secondary students in English exam preparation</li>
+                            <li>Specialized in helping underperforming learners rebuild foundations</li>
+                            <li>Helped students achieve success in high school entrance exams</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Teaching</span>
+                            <span>Communication</span>
+                            <span>Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm currently looking for new opportunities to apply my skills and contribute to innovative projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-cards">
+                        <a href="mailto:minhlq.281004@gmail.com" class="contact-card">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Email</span>
+                                <span class="card-value">minhlq.281004@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:0972690015" class="contact-card">
+                            <div class="card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Phone</span>
+                                <span class="card-value">0972690015</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/leminh2810" target="_blank" class="contact-card">
+                            <div class="card-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">GitHub</span>
+                                <span class="card-value">leminh2810</span>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Location</span>
+                                <span class="card-value">Hanoi, Vietnam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-visual">
+                    <div class="code-block">
+                        <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+    <span class="property">name</span>: <span class="string">"Lê Quang Minh"</span>,
+    <span class="property">status</span>: <span class="string">"Open to opportunities"</span>,
+    <span class="property">interests</span>: [
+        <span class="string">"AI/ML"</span>,
+        <span class="string">"Computer Vision"</span>,
+        <span class="string">"Web Development"</span>
+    ],
+    <span class="property">languages</span>: {
+        <span class="property">vietnamese</span>: <span class="string">"Native"</span>,
+        <span class="property">english</span>: <span class="string">"B2"</span>,
+        <span class="property">french</span>: <span class="string">"A2"</span>
+    }
+};
+
+<span class="keyword">if</span> (<span class="variable">you</span>.<span class="method">haveOpportunity</span>()) {
+    <span class="variable">developer</span>.<span class="method">contact</span>();
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/leminh2810" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:minhlq.281004@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                Designed & Built by <span class="highlight">Lê Quang Minh</span>
+            </p>
+            <p class="footer-copyright">© 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

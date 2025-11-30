@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Le Minh — Portfolio</title>
+  <meta name="description" content="Portfolio showcasing projects, skills and contact information." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Le Minh</a>
+      <nav class="nav" id="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="name">Hi — I'm Le Minh</h1>
+          <p class="lead">I build elegant, fast, and accessible web experiences. Frontend-focused developer with a soft spot for clean UI and delightful interactions.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="assets/placeholder.svg" alt="Stylized portrait placeholder" class="hero-illustration">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <img src="assets/placeholder.svg" alt="Project screenshot">
+            <h3>Project One</h3>
+            <p>Interactive UI + performant animations with modern JS tooling.</p>
+            <div class="card-actions">
+              <button class="btn" data-project="1">Details</button>
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/placeholder.svg" alt="Project screenshot">
+            <h3>Project Two</h3>
+            <p>Accessible, responsive layout with lightweight CSS architecture.</p>
+            <div class="card-actions">
+              <button class="btn" data-project="2">Details</button>
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/placeholder.svg" alt="Project screenshot">
+            <h3>Project Three</h3>
+            <p>Progressive enhancement and strong SEO fundamentals.</p>
+            <div class="card-actions">
+              <button class="btn" data-project="3">Details</button>
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-list">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Accessibility</span>
+          <span class="skill">Performance</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Want to work together or ask a question? Send a message.</p>
+        <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+          <div class="field-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+          </div>
+          <textarea name="message" rows="6" placeholder="Message" required></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send</button>
+            <a class="btn ghost" href="mailto:your-email@example.com">Email Me</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <strong>Le Minh</strong> — Built with care.</span>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
